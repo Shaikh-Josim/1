@@ -1,9 +1,12 @@
+#simple calculator program to add two numbers 
+
 class Calculator():
     def __init__(self):
         print("This is a simple calculator\n")
         self.choice = -1
         self.performCalculation()
-    
+
+    #asks user for airthmatic operation until user quit by pressing 0
     def performCalculation(self):
         while(1):
             print("\nPlease select any 1 opration need to be perform from following:\n1.Addition\n2.Substraction\n3.Multiplication\n4.Division\npress 0 to exit\n")
