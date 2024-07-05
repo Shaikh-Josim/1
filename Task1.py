@@ -9,7 +9,8 @@ class ToDoList():
         self.data = ["Its a nice day to work","keep track of your work here :)"]
         self.p.field_names = self.header
         self.showToDoList()
-        
+
+    #show the main page and asks user what they want to do? 
     def welcome(self):
         print("\n\nwhats in your mind?\n1.create todolist\n2.Update todolist\n3.track todolist\nPRESS ANY KEY OTHER KEY TO EXIT\n")
         c = input("Enter your choice:\t")
@@ -22,6 +23,7 @@ class ToDoList():
         else:
             pass
 
+    #shows the todo-list
     def showToDoList(self):
         
         self.p.field_names = self.header
@@ -31,6 +33,7 @@ class ToDoList():
         self.p.clear_rows()
         self.welcome()
 
+    #creates the new todo-list
     def createToDoList(self):
         self.data.clear()
         print("\npress 0 when done adding task\n")
@@ -49,6 +52,7 @@ class ToDoList():
         print("New ToDo-List is created :)")
         self.welcome()
 
+    #updates the  todo list if task is done
     def updateToDoList(self):
         while(1):
             row = int(input("Enter the task no. you have completed to update the todo-list Else press 0 to exit:\t"))
