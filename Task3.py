@@ -1,3 +1,4 @@
+#simple password generator for specific length and complexity
 import random
 
 class PasswordGenerator():
